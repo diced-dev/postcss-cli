@@ -1,3 +1,7 @@
+# 5.1.0 / 2018-05-30
+
+- Added `--await` CLI option for awaiting file writes to finish before processing when using `--watch`
+
 # 5.0.0 / 2018-02-06
 
 - Now allows passing a directory as the input (all files in the directory will be processed)

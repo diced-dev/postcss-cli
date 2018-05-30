@@ -51,6 +51,8 @@ Advanced options:
             directory, for use with --dir                               [string]
   --poll    Use polling for file watching. Can optionally pass polling interval;
             default 100 ms
+  --await   Await file write completion before processing while watching;
+            default false                                              [boolean]
   --config  Set a custom path to look for a config file                 [string]
 
 Options:
