@@ -90,7 +90,7 @@ Promise.resolve()
       const watcher = chokidar.watch(input.concat(dependencies(results)), {
         usePolling: argv.poll,
         interval: argv.poll && typeof argv.poll === 'number' ? argv.poll : 100,
-        awaitWriteFinish: argv.await && typeof argv.await === 'boolean' ? argv.await : false
+        awaitWriteFinish: argv.await ? true : false
       })
 
       if (configFile) watcher.add(configFile)
